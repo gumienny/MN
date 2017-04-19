@@ -24,3 +24,4 @@ xn1 = b;
 disp('%%%%%%%%%%%%%%% METODA SIECZNYCH');
 [xn2, yn2, OUT] = f_secant('func', xn0, xn1, k_max, tol)
 disp('%%%%%%%%%%%%%%% METODA NEWTONA');
+[xn1, yn1, OUT] = f_newton('func', 'dfunc', xn1, k_max, tol)
