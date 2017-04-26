@@ -1,8 +1,8 @@
-/**
+#{
  * Jakby się Octave wysypał: http://stackoverflow.com/questions/12032494/plot-window-not-responding
  * graphics_toolkit('gnuplot');
  * Dosyć długo trwa rysowanie wykresu :/
- */
+#}
 graphics_toolkit('gnuplot');
 more off;
 clc ;
