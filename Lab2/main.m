@@ -1,9 +1,11 @@
 #{
- * Jakby się Octave wysypał: http://stackoverflow.com/questions/12032494/plot-window-not-responding
+ * http://stackoverflow.com/questions/12032494/plot-window-not-responding
  * graphics_toolkit('gnuplot');
- * Dosyć długo trwa rysowanie wykresu :/
+ * Gnuplot software needed.
 #}
+
 graphics_toolkit('gnuplot');
+
 more off;
 clc ;
 x = -3:0.1:3;
