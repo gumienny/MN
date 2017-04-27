@@ -1,29 +1,28 @@
 function [ L, U ] = f_gauss_doolittle( A )
-    [ null, N ] = size( A );
+    N = size( A )(1);
     
-    for kk = 1:1:N
+    for kk = 1:N
         L( kk, kk ) = 1;
         
-        for jj = kk:1:N
+        for jj = kk:N
             sum = 0;
 
-            for ss = 1:1:kk-1
+            for ss = 1:kk-1
                 sum = sum + L( kk, ss ) * U( ss, jj );
-            endfor
+            end
 
             U( kk, jj ) = A( kk, jj ) - sum;
             sum = 0;
-        endfor
+        end
 
-        for ii = kk+1:1:N
+        for ii = kk+1:N
             sum = 0;
 
-            for ss = 1:1:kk-1
+            for ss = 1:kk-1
                 sum = sum + L( ii, ss ) * U( ss, kk );
-            endfor
+            end
 
             L( ii, kk ) = ( A( ii, kk ) - sum ) / U( kk, kk );
-            sum = 0;
-        endfor
-    endfor
-endfunction
+        end
+    end
+end
