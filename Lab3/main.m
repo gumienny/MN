@@ -10,35 +10,36 @@ disp( 'A\b' )
 x = A \ b
 
 % 3., 4.
-% A - kwadratowa macierz wsp蟪czynnik體
-% b - wektor wyraz體 wolnych
-% x - wektor szukanych (rozwi箊anie URL)
-% Ur - macierz rozszerzona uk砤du przekszta砪ona do macierzy tr骿k箃nej g髍nej
+% A - kwadratowa macierz wsp贸艂czynnik贸w
+% b - wektor wyraz贸w wolnych
+% x - wektor szukanych (rozwi膮zanie URL)
+% Ur - macierz rozszerzona uk艂adu przekszta艂cona do macierzy tr贸jk膮tnej g贸rnej
+disp( 'Metoda Gaussa:' )
 [ x, Ur ] = f_gauss( A, b )
 
 % 5.
-disp( 'Rozklad LU - natywna funkcja' );
+disp( 'Rozklad LU - natywna funkcja:' );
 [ L, U ] = lu( A )
 
 % 6., 7.
-disp( 'Rozklad LU - z zaimplementowanych metod' )
+disp( 'Rozklad LU - z zaimplementowanych metod:' )
 [ L, U ] = f_gauss_doolittle( A )
 
 % 8., 9.
-% A - kwadratowa macierz wsp蟪czynnik體
-% b - wektor wyraz體 wolnych
-% k_max - maksymalna ilo滄 iteracji
-% tol - 抗dana dok砤dno滄 rozwi箊ania
-% xx - wektor szukanych (rozwi箊anie URL)
-% kk - numer iteracji, na kt髍ej zako馽zono obliczenia
+% A - kwadratowa macierz wsp贸艂czynnik贸w
+% b - wektor wyraz贸w wolnych
+% k_max - maksymalna ilo艣膰 iteracji
+% tol - 偶膮dana dok艂adno艣膰 rozwi膮zania
+% xx - wektor szukanych (rozwi膮zanie URL)
+% kk - numer iteracji, na kt贸rej zako艅czono obliczenia
 k_max = 20;
 tol = 0.0001;
-disp( 'Metoda Jacobiego' )
+disp( 'Metoda Jacobiego:' )
 [ xx, kk ] = f_jacobi( A, b, k_max, tol )
 
 % 10.
-% A - kwadratowa macierz wsp蟪czynnik體
-% b - wektor wyraz體 wolnych
-% x - wektor szukanych (rozwi箊anie URL)
-disp( 'Metoda Gaussa-Jordana' )
+% A - kwadratowa macierz wsp贸艂czynnik贸w
+% b - wektor wyraz贸w wolnych
+% x - wektor szukanych (rozwi膮zanie URL)
+disp( 'Metoda Gaussa-Jordana:' )
 [ x ] = f_gauss_jordan( A, b )
