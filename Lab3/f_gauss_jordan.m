@@ -12,5 +12,5 @@ function [ x ] = f_gauss_jordan( A, b )
         end
     end
     
-    x = Ar( :, N + 1 )'; 
+    x = Ar( :, N + 1 ).'; 
 end
