@@ -14,3 +14,9 @@ Układy równań liniowych:
 - metoda Gaussa-Jordana,
 - metoda Jacobiego,
 - metoda Gaussa-Dolittle'a.
+
+## /Lab4
+Interpolacja i aproksymacja
+- wzór interpolacyjny Lagrange'a,
+- wzór interpolacyjny Newtona,
+- iteracyjna metoda Aitkena.
