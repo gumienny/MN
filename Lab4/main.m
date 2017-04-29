@@ -38,3 +38,10 @@ y = f_lagrange( x0, y0, x )
 hold on
 plot( x, y, 'k' )
 hold off
+
+% 6., 7.
+y = f_newton( x0, y0, x )
+hold on
+plot( x, y, 'm' )
+hold off
+
