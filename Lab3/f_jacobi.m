@@ -20,5 +20,7 @@ function [ xx, kk ] = f_jacobi( A, b, k_max, tol )
     while ( sum( abs( xx - ( C + D * xx ) ) ) > tol && k_max-- > 0 )
         kk++;
         xx = C + D * xx;
-    end 
+    end
+
+    xx = xx.';
 end
