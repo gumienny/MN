@@ -1,4 +1,13 @@
-graphics_toolkit( 'gnuplot' );
+#{
+ * http://stackoverflow.com/questions/12032494/plot-window-not-responding
+ * graphics_toolkit('gnuplot');
+ * Gnuplot software needed.
+#}
+
+graphics_toolkit('gnuplot');
+
+more off;
+clc;
 
 % 1.
 % x0, y0 - wspołrzędne punktów
