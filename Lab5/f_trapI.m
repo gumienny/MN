@@ -8,6 +8,6 @@ function [ OUT ] = f_trapI( f, xp, xk, n )
     OUT = 0;
 
     for ii = 1:n
-	    OUT = OUT + ( yi( ii ) + yi( ii + 1 ) ) * h / 2;
+        OUT = OUT + ( yi( ii ) + yi( ii + 1 ) ) * h / 2;
     end
 end
