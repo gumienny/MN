@@ -16,7 +16,13 @@ Układy równań liniowych:
 - metoda Gaussa-Dolittle'a.
 
 ## /Lab4
-Interpolacja i aproksymacja
+Interpolacja i aproksymacja:
 - wzór interpolacyjny Lagrange'a,
 - wzór interpolacyjny Newtona,
 - iteracyjna metoda Aitkena.
+
+## /Lab5
+Kwadratury:
+- metoda prostokątów,
+- metoda trapezów,
+- metoda Crude Monte Carlo.
