@@ -26,3 +26,7 @@ Kwadratury:
 - metoda prostokątów,
 - metoda trapezów,
 - metoda Crude Monte Carlo.
+
+## /Lab6
+Różniczkowanie i rozwiązywanie równań różniczkowych:
+- metoda Eulera.
